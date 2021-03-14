@@ -27,7 +27,7 @@ const SearchParams = () => {
       const breedStrings = breeds.map(({ name }) => name);
       updateBreeds(breedStrings);
     }, console.error);
-  }, [animal]);
+  }, [animal, updateBreed]);
 
   return (
     <div className="search-params">
